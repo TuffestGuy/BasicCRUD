@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Task Form */
+#task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out 0.5s forwards;
+}
+
+#task-input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e68900;
+    transform: scale(1.1);
+}
+
+/* Task List */
+table {
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out 1s forwards;
+}
+
+thead {
+    background: #333;
+}
+
+td, th {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
