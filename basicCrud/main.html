@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio & Task Manager</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <p>Welcome to my portfolio website with task management</p>
+        </header>
+
+        <section class="task-section">
+            <div class="task-form">
+                <input type="text" id="taskInput" placeholder="Enter your task...">
+                <input type="text" id="descriptionInput" placeholder="Enter task description/status...">
+                <input type="datetime-local" id="deadlineInput"> <!-- New Deadline Input -->
+                <button onclick="addTask()" class="add-btn">
+                    <i class="fas fa-plus"></i> Add Task
+                </button>
+            </div>
+
+            <div class="task-table-container">
+                <table id="taskTable">
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Description/Status</th>
+                            <th>Deadline</th> 
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="taskList">
+                        <!-- Tasks will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section class="portfolio-section">
+            <h2>About Us</h2>
+            <div class="portfolio-content">
+                <div class="profile">
+                    <img src="myPhoto.jpg" alt="Profile Picture" class="profile-img">
+                    <h3>Laguna, Julian James V.</h3>
+                    <p>Web Developer & Designer</p>
+                </div>  
+                <div class="profile">
+                    <img src="renth.jpg" alt="Profile Picture" class="profile-img">
+                    <h3>Carcedo, Jethro Lyle E.</h3>
+                    <p>Web Developer & Designer</p>
+                </div>
+                <div class="profile">
+                    <img src="sleepwell.jpg" alt="Profile Picture" class="profile-img">
+                    <h3>Boncato, Alvin Angelo</h3>
+                    <p>Web Developer & Designer</p>
+                </div>                              
+            </div>
+        </section>
+    </div>
+    <script src="settings.js"></script>
+</body>
+</html>
